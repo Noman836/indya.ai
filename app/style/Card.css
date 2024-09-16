@@ -5,7 +5,7 @@
 } */
 
 .animated-card {
-    background-image: url('../assets//animated-card.png');
+    background-image: url('../../public/assets/animated-card.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
