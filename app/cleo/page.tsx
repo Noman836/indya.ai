@@ -7,6 +7,8 @@ import HeroImage from "../../public/assets/cleo/heroImage.png";
 import "../style/Cleo.css";
 import ImageCard from "@/components/ImageCard";
 import MiniCard from "@/components/MiniCard";
+import ReadyToExperience from "@/components/ReadyToExperience";
+import Footer from "@/components/Footer";
 const login: NextPage = () => {
   return (
     <>
@@ -69,7 +71,7 @@ const login: NextPage = () => {
         </div>
         <div className="container flex justify-between gap-6 pt-3 px-3">
           <div className="bg-red-200 w-1/3 h-[400px]"></div>
-          <div className="flex flex-col gap-3 h-auto p-3 relative">
+          <div className="flex flex-col gap-3 p-3 ">
             <ImageCard
               backgroundImage="/assets/bg.png"
               imageSrc="/assets/cleo/a.png"
@@ -77,10 +79,10 @@ const login: NextPage = () => {
               title="Discoverability Agent"
               description="Enhance visibility across your cloud environment. The Discoverability Agent identifies all assets, ensuring nothing is overlooked, and provides a clear map of your infrastructure."
               className=""
-              imageSrcStyle1=""
+              imageSrcStyle1="pt-1"
               imageSrcStyle2="pt-20 pl-10"
             />
-             <ImageCard
+            <ImageCard
               backgroundImage="/assets/bannerbg.png"
               imageSrc="/assets/cleo/dash-1.png"
               imageSrc2="/assets/cleo/dash-2.png"
@@ -110,7 +112,7 @@ const login: NextPage = () => {
               imageSrcStyle1=" w-[346px] "
               imageSrcStyle2=""
             />
-             <ImageCard
+            <ImageCard
               backgroundImage="/assets/blackbg.png"
               imageSrc="/assets/cleo/group-3.png"
               imageSrc2=""
@@ -120,10 +122,6 @@ const login: NextPage = () => {
               imageSrcStyle1="w-[756px] pt-1"
               imageSrcStyle2=""
             />
-            {/* <ImageCard />
-            <ImageCard />
-            <ImageCard />
-            <ImageCard /> */}
           </div>
         </div>
       </section>
@@ -141,9 +139,27 @@ const login: NextPage = () => {
               infrastructure.
             </p>
           </div>
-          <div className="flex justify-center gap-3">
-            {/* <ImageCard /> */}
-            {/* <ImageCard /> */}
+          <div className="flex justify-center gap-3 pt-3 px-3">
+            <ImageCard
+              backgroundImage=""
+              imageSrc="/assets/cleo/advance-img.png"
+              imageSrc2=""
+              title="Compliance and Regulatory Agent"
+              description="Stay compliant with ease. The Compliance and Regulatory Agent monitors your adherence to industry standards and regulations, automates reporting, and provides guidance to close compliance gaps."
+              className=""
+              imageSrcStyle1=""
+              imageSrcStyle2=""
+            />
+            <ImageCard
+              backgroundImage=""
+              imageSrc="/assets/cleo/noiceimg.png"
+              imageSrc2=""
+              title="Compliance and Regulatory Agent"
+              description="Stay compliant with ease. The Compliance and Regulatory Agent monitors your adherence to industry standards and regulations, automates reporting, and provides guidance to close compliance gaps."
+              className=""
+              imageSrcStyle1="w-[523px] h-[272px] pt-12"
+              imageSrcStyle2=""
+            />
           </div>
         </div>
       </section>
@@ -196,6 +212,34 @@ const login: NextPage = () => {
             />
           </div>
         </div>
+      </section>
+      <section className=" container-fluid mb-5">
+        <div className="container">
+          <ReadyToExperience backgroundImage="/assets/cleo/advance-background.png" />
+        </div>
+      </section>
+      <section className=" container-fluid mb-5">
+        <div className="container">
+          <div className="flex gap-3">
+            <MiniCard
+              title="MAI-Powered Security Posture Assessment"
+              description="Enhance your security posture with advanced AI-driven assessments, providing deeper insights and automated recommendations for improving your cloud security."
+              className="w-1/2 border border-boxBorderColor rounded-[6px]"
+              buttonText="Learn More"
+               buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
+            />
+            <MiniCard
+              title="Zero Trust Security Model"
+              description="Implement a robust Zero Trust Security Model to ensure continuous verification of all access requests, reducing risks and strengthening your overall security framework."
+                buttonText="Learn More"
+                 className="w-1/2 border border-boxBorderColor rounded-[6px]"
+              buttonClassName="border text-primary border-boxBorderColor rounded-[6px] px-[19px] py-[6px]"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <Footer/>
       </section>
     </>
   );

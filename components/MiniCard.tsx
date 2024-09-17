@@ -1,12 +1,23 @@
 import React from "react";
+
 interface CardProps {
   title: string;
   description: string;
+  className?: string;
+  buttonText?: string;
+  buttonClassName?: string;
 }
-const MiniCard = ({ title, description }: CardProps) => {
+
+const MiniCard: React.FC<CardProps> = ({
+  title,
+  description,
+  className = "border border-boxBorderColor rounded-2xl w-[281px] h-[216px]",
+  buttonText = "Read More",
+  buttonClassName = "text-primary mt-3 cursor-pointer",
+}) => {
   return (
     <>
-      <main className="border border-boxBorderColor rounded-2xl w-[281px] h-[216px]">
+      <main className={className}>
         <div className="p-3 flex flex-col gap-10 items-stretch">
           <div className="">
             <h1 className="text-primary font-bold leading-[36px] text-[16px] mb-2">
@@ -17,9 +28,8 @@ const MiniCard = ({ title, description }: CardProps) => {
             </p>
           </div>
           <div className="">
-            <button className="text-primary mt-3 cursor-pointer">Read More</button>
-
-            </div>
+            <button className={buttonClassName}>{buttonText}</button>
+          </div>
         </div>
       </main>
     </>

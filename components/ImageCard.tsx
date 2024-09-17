@@ -24,11 +24,7 @@ const ImageCard: React.FC<ImageCardProps> = ({
   return (
     <main
       className={`border border-boxBorderColor rounded-[30px] w-[822px] h-[447px] relative overflow-hidden ${className}`}
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+     
     >
       <div className="p-3 rounded-t-[30px] relative z-10 mb-2">
         <h1 className="text-primary font-bold leading-[36px] text-[24px] pt-5">
@@ -38,7 +34,14 @@ const ImageCard: React.FC<ImageCardProps> = ({
           {description}
         </p>
       </div>
-      <div className="w-full flex justify-center items-center relative z-10 ">
+      <div className="w-full flex justify-center overflow-hidden"
+       style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat:'no-repeat'
+      }}
+      >
         {imageSrc && (
           <Image
             src={imageSrc}
