@@ -1,10 +1,8 @@
-import { Button } from "./ui/button";
+
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import '../app/style/Navbar.css'
@@ -17,7 +15,7 @@ const Navbar = () => {
     return (
         <>
             <main className="main-container">
-                <div className="navbar lg:w-3/4 container px-[48px] flex justify-between items-center py-[20px] bg-customblack text-white rounded-[50px]">
+                <div className="navbar  container px-[48px] flex justify-between items-center py-[20px] bg-customblack text-white rounded-[50px]">
                     <div className="font-secondary text-[32px] leading-[48px] font-[700]">indya.ai</div>
                     <div className="flex">
                         <nav className="flex gap-[32px]">

@@ -8,6 +8,7 @@ import Group from "../public/assets/group.png";
 import { Button } from "@/components/ui/button";
 import Card from "@/components/Card";
 import AnimatedCard from "@/components/AnimatedCard";
+import SectionLayout from "@/components/SectionLayout";
 
 export default function Home() {
   return (
@@ -91,6 +92,9 @@ export default function Home() {
             description="Gain actionable insights and predictive analytics to stay ahead of threats. Over 1 million data points analysed per second."
           />
         </div>
+      </section>
+      <section className="container w-3/4 p-5 border border-boxBorderColor mt-5 rounded-[10px]">
+        <SectionLayout/>
       </section>
     </section>
   );
