@@ -1,17 +1,69 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
-const ImageCard = () => {
-  return (
-    <>
-    <main className='border border-boxBorderColor rounded-[30px] w-[822px] h-[447px]'>
-        <div className='p-3'>
-            <h1 className='text-primary font-bold leading-[36px] text-[24px]'>Discoverability Agent</h1>
-            <p className='text-primary font-[400] leading-[24px] text-[16px]'>Enhance visibility across your cloud environment. The Discoverability Agent identifies all assets, ensuring nothing is overlooked, and provides a clear map of your infrastructure.</p>
-        </div>
-        <div className='w-full rounded-[30px]'></div>
-    </main>
-    </>
-  )
+interface ImageCardProps {
+  backgroundImage: string;
+  imageSrc?: string;
+  imageSrc2?: string;
+  title: string;
+  description: string;
+  className?: string;
+  imageSrcStyle1?: string;
+  imageSrcStyle2?: string;
 }
+const ImageCard: React.FC<ImageCardProps> = ({
+  backgroundImage,
+  imageSrc,
+  imageSrc2,
+  title,
+  description,
+  className = "",
+  imageSrcStyle1 = "",
+  imageSrcStyle2 = "",
+}) => {
+  return (
+    <main
+      className={`border border-boxBorderColor rounded-[30px] w-[822px] h-[447px] relative overflow-hidden ${className}`}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="p-3 rounded-t-[30px] relative z-10 mb-2">
+        <h1 className="text-primary font-bold leading-[36px] text-[24px] pt-5">
+          {title}
+        </h1>
+        <p className="text-primary font-[400] leading-[24px] text-[16px] pt-3">
+          {description}
+        </p>
+      </div>
+      <div className="w-full flex justify-center items-center relative z-10 ">
+        {imageSrc && (
+          <Image
+            src={imageSrc}
+            alt={title}
+            width={550}
+            height={568}
+            className={`${imageSrcStyle1}`}
+          />
+        )}
+        {imageSrc2 && (
+          <Image
+            src={imageSrc2}
+            alt={title}
+            width={550}
+            height={250}
+            className={`${imageSrcStyle2}`}
+          />
+        )}
+      </div>
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center rounded-[30px]"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      ></div>
+    </main>
+  );
+};
 
-export default ImageCard
+export default ImageCard;
