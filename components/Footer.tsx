@@ -14,55 +14,55 @@ const Footer = () => {
                 <div className='flex flex-col w-1/4'>
                     <ul>
                         <li className='font-bold text-primary pb-5'>Products</li>
-                        <li className='underline text-primary'>Cleo</li>
-                        <li className='text-secondary'>AI Agents</li>
+                        <li className='underline text-primary pb-[8px]'>Cleo</li>
+                        <li className='text-secondary pb-[8px]'>AI Agents</li>
                         <li className='text-secondary'>Integration</li>
                     </ul>
                 </div>
                 <div className='flex flex-col w-1/4'>
                     <ul>
                         <li className='font-bold text-primary pb-5'>Solution</li>
-                        <li className='text-secondary'>By Industry</li>
-                        <li className='text-secondary'>By Use Case</li>
+                        <li className='text-secondary pb-[8px]'>By Industry</li>
+                        <li className='text-secondary pb-[8px]'>By Use Case</li>
                     </ul>
                 </div>
                 <div className='flex flex-col w-1/4'>
                     <ul>
                         <li className='font-bold text-primary pb-5'>Resources</li>
-                        <li className='text-secondary'>Blog</li>
-                        <li className='text-secondary'>Witepapers</li>
-                        <li className='text-secondary'>Case Studies</li>
-                        <li className='text-secondary'>Webinars</li>
-                        <li className='text-secondary'>EBooks</li>
+                        <li className='text-secondary pb-[8px]'>Blog</li>
+                        <li className='text-secondary pb-[8px]'>Witepapers</li>
+                        <li className='text-secondary pb-[8px]'>Case Studies</li>
+                        <li className='text-secondary pb-[8px]'>Webinars</li>
+                        <li className='text-secondary pb-[8px]'>EBooks</li>
                     </ul>
                 </div>
                 <div className='flex flex-col w-1/4'>
                     <ul>
                         <li className='font-bold text-primary pb-5'>Company</li>
-                        <li className='text-secondary'>About Us</li>
-                        <li className='text-secondary'>Careers</li>
-                        <li className='text-secondary'>Partners</li>
-                        <li className='text-secondary'>Customers</li>
-                        <li className='text-secondary'>Contact</li>
+                        <li className='text-secondary pb-[8px]'>About Us</li>
+                        <li className='text-secondary pb-[8px]'>Careers</li>
+                        <li className='text-secondary pb-[8px]'>Partners</li>
+                        <li className='text-secondary pb-[8px]'>Customers</li>
+                        <li className='text-secondary pb-[8px]'>Contact</li>
                     </ul>
                 </div>
                 <div className='flex flex-col w-1/4'>
                     <ul>
                         <li className='font-bold text-primary pb-5'>Legal</li>
-                        <li className='text-secondary'>Privacy Policy</li>
-                        <li className='text-secondary'>Term of Services</li>
-                        <li className='text-secondary'>Security</li>
+                        <li className='text-secondary pb-[8px]'>Privacy Policy</li>
+                        <li className='text-secondary pb-[8px]'>Term of Services</li>
+                        <li className='text-secondary pb-[8px]'>Security</li>
                     </ul>
                 </div>
                 <div className='flex flex-col w-1/4'>
                     <ul>
                         <li className='font-bold text-primary pb-5'>Others</li>
-                        <li className='text-secondary'>Product Preview</li>
-                        <li className='text-secondary'>Affiliatea</li>
+                        <li className='text-secondary pb-[8px]'>Product Preview</li>
+                        <li className='text-secondary pb-[8px]'>Affiliatea</li>
                     </ul>
                 </div>
             </div>
-            <hr className='container mt-[48px]' />
+            <hr className='container mt-[60px]' />
             <div className='container mt-[35px] flex justify-between items-center'>
                 <div>
                     <h2 className='text-[20px] text-primary font-bold leading-[30px]'>We protect your security and privacy.</h2>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <Image src={linkedIn} alt="Contact Us Image" width={24} height={24} />
                 </div>
             </div>
-            <div className='container mt-[51px] flex justify-between items-center bg-customblack px-[48px] py-[16px] rounded-[72px]'>
+            <div className='container mt-[51px] flex justify-between items-center bg-navBgColor px-[48px] py-[16px] rounded-[72px]'>
                 <div className='text-primary font-secondary font-[700] text-[32px] leading-[48px]'>inya.ai</div>
                 <div className='text-secondary text-[14px] leading-[21px]'>© 2024 indya.ai. All rights reserved.</div>
                 <div className='text-primary text-[16px] font-[400] leading-[24px] flex items-center gap-1'>Legal <span>

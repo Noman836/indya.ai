@@ -1,4 +1,6 @@
 import React from "react";
+import arrow from '../public/assets/cleo/arrow-right.png'
+import Image from "next/image";
 
 interface CardProps {
   title: string;
@@ -6,33 +8,44 @@ interface CardProps {
   className?: string;
   buttonText?: string;
   buttonClassName?: string;
+  descclasssName: string;
+  titleStyle: string;
+  showImage?: boolean;  
 }
 
 const MiniCard: React.FC<CardProps> = ({
   title,
   description,
-  className = "border border-boxBorderColor rounded-2xl w-[281px] h-[216px]",
+  className = "border border-boxBorderColor rounded-[12px] w-[350px] ",
   buttonText = "Read More",
-  buttonClassName = "text-primary mt-3 cursor-pointer",
+  buttonClassName = "text-primary cursor-pointer",
+  descclasssName = '',
+  titleStyle = "",
+  showImage = true  
 }) => {
   return (
-    <>
-      <main className={className}>
-        <div className="p-3 flex flex-col gap-10 items-stretch">
-          <div className="">
-            <h1 className="text-primary font-bold leading-[36px] text-[16px] mb-2">
-              {title}
-            </h1>
-            <p className="text-primary pr-5 font-[400] leading-[24px] text-[16px]">
-              {description}
-            </p>
-          </div>
-          <div className="">
-            <button className={buttonClassName}>{buttonText}</button>
-          </div>
+    <main className={className}>
+      <div className="pl-[32px] py-[32px] flex flex-col gap-[30px] items-stretch">
+        <div className="">
+          <h1 className={`text-primary font-bold leading-[36px] text-[16px] mb-2 ${titleStyle}`}>
+            {title}
+          </h1>
+          <p className={`text-primary w-[270px] pr-5 font-[400] leading-[24px] text-[16px] ${descclasssName}`}>
+            {description}
+          </p>
         </div>
-      </main>
-    </>
+        <div className="">
+          <button className={buttonClassName}>
+            {buttonText} 
+            {showImage && ( 
+              <span className="flex">
+                <Image src={arrow} alt="arrow Image" width={15.67} height={9.33} />
+              </span>
+            )}
+          </button>
+        </div>
+      </div>
+    </main>
   );
 };
 

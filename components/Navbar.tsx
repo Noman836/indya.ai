@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import '../app/style/Navbar.css'
 import { FaChevronDown } from 'react-icons/fa';
-import ShinyButton from "@/components/magicui/shiny-button";
+import { Button } from "./ui/button";
 
 
 
@@ -15,8 +15,9 @@ const Navbar = () => {
     return (
         <>
             <main className="main-container">
-                <div className="navbar  container px-[48px] flex justify-between items-center py-[20px] bg-customblack text-white rounded-[50px]">
-                    <div className="font-secondary text-[32px] leading-[48px] font-[700]">indya.ai</div>
+                <div className="navbar  container px-[48px] flex justify-between items-center py-[20px] bg-navBgColor text-white rounded-[50px]">
+                    <div>
+                        <h1  className="font-secondary text-[32px] leading-[48px] font-bold">indya.ai</h1></div>
                     <div className="flex">
                         <nav className="flex gap-[32px]">
                             <DropdownMenu>
@@ -63,7 +64,7 @@ const Navbar = () => {
                         </nav>
                     </div>
                     <div className="">
-                        <ShinyButton text="Get Early Access" className="bg-primary rounded-[6px] text-black hover:text-white" />
+                        <Button className="bg-primary text-center hover:bg-primary rounded-[6px] text-colorBlack text-[14px] leading-[21px] font-[600]">Get Early Access</Button>
                     </div>
                 </div>
             </main>

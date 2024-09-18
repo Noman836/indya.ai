@@ -10,6 +10,7 @@ interface ImageCardProps {
   className?: string;
   imageSrcStyle1?: string;
   imageSrcStyle2?: string;
+  backgroundMainImage:string;
 }
 const ImageCard: React.FC<ImageCardProps> = ({
   backgroundImage,
@@ -20,11 +21,17 @@ const ImageCard: React.FC<ImageCardProps> = ({
   className = "",
   imageSrcStyle1 = "",
   imageSrcStyle2 = "",
+  backgroundMainImage = ""
 }) => {
   return (
     <main
       className={`border border-boxBorderColor rounded-[30px] w-[822px] h-[447px] relative overflow-hidden ${className}`}
-     
+      style={{
+        backgroundImage: `url(${backgroundMainImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat:'no-repeat'
+      }}
     >
       <div className="p-3 rounded-t-[30px] relative z-10 mb-2">
         <h1 className="text-primary font-bold leading-[36px] text-[24px] pt-5">

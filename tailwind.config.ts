@@ -30,7 +30,9 @@ const config: Config = {
 			customgray: '#f5f5f5',
             customblack: '#333333',
 			boxbgColor:'#111111',
-			boxBorderColor:'#323232'
+			boxBorderColor:'#323232',
+			navBgColor:'rgba(193, 193, 193, 0.12)',
+			colorBlack:'#0A0A0A'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
