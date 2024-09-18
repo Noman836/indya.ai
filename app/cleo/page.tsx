@@ -71,28 +71,36 @@ const login: NextPage = () => {
           </p>
         </div>
         <div className="container flex justify-between gap-6 pt-3 px-3">
-          <div className="bg-red-200 w-1/3 h-[400px]"></div>
+        <div className="p-3 w-1/3 h-[400px]">
+          <ul>
+            <li className="text-primary text-[18px] leading-[27px] font-[500] list-disc mb-[12px]">Rule Discoverability Agent Engines</li>
+            <li className="text-secondary text-[18px] leading-[27px] font-[400] list-disc mb-[12px]">Cloud Security Posture Management (CSPM) Agent</li>
+            <li className="text-secondary text-[18px] leading-[27px] font-[400] list-disc mb-[12px]">Cost Optimization Agent</li>
+            <li className="text-secondary text-[18px] leading-[27px] font-[400] list-disc mb-[12px]">Compliance and Regulatory Agent</li>
+            <li className="text-secondary  text-[18px] leading-[27px] font-[400] list-disc mb-[12px]">Vulnerability Management Agent</li>
+          </ul>
+          </div>
           <div className="flex flex-col gap-3 p-3 ">
             <ImageCard
-              backgroundImage="/assets/bg.png"
-              imageSrc="/assets/cleo/a.png"
-              imageSrc2="/assets/cleo/b.png"
+              backgroundImage=""
+              imageSrc=""
+              imageSrc2="/assets/cleo/discovered.png"
               title="Discoverability Agent"
               description="Enhance visibility across your cloud environment. The Discoverability Agent identifies all assets, ensuring nothing is overlooked, and provides a clear map of your infrastructure."
               className=""
-              imageSrcStyle1="pt-1"
-              imageSrcStyle2="pt-20 pl-10"
+              imageSrcStyle1=""
+              imageSrcStyle2="w-[100%] mt-[16px]"
               backgroundMainImage=""
             />
             <ImageCard
-              backgroundImage="/assets/cleo/lightbackground.png"
+              backgroundImage=""
               imageSrc="/assets/cleo/dash-1.png"
               imageSrc2="/assets/cleo/dash-2.png"
               title="Cloud Security Posture Management (CSPM) Agent"
               description="Maintain and improve your cloud security posture. The CSPM Agent continuously assesses your environment, identifies risks, and offers actionable recommendations to strengthen your defenses."
               className=""
-              imageSrcStyle1="pt-10 absolute left-4 top-0"
-              imageSrcStyle2="absolute right-4 top-0"
+              imageSrcStyle1="pt-10 absolute left-4 bottom-0 h-[249.1px]"
+              imageSrcStyle2="absolute right-4 bottom-0 h-[280.1px]"
               backgroundMainImage="/assets/cleo/lightbackground.png"
             />
 
@@ -103,8 +111,8 @@ const login: NextPage = () => {
               title="Cost Optimization Agent"
               description="Maximize cost efficiency with the Cost Optimization Agent. It analyzes usage patterns and identifies opportunities for savings, helping you optimize resource allocation and reduce expenses."
               className=""
-              imageSrcStyle1="pt-10 absolute left-20 top-2 w-[346px] "
-              imageSrcStyle2="absolute right-20 top-12 w-[346px] "
+              imageSrcStyle1="pt-10 absolute left-20 bottom-0 w-[346px] "
+              imageSrcStyle2="absolute right-20 bottom-0 w-[346px] "
                  backgroundMainImage="/assets/cleo/background2.png"
             />
             <ImageCard
@@ -148,7 +156,7 @@ const login: NextPage = () => {
           </div>
           <div className="flex justify-center gap-3 pt-3 px-3">
             <ImageCard
-              backgroundImage=""
+              backgroundImage="/assets/cleo/background4.png"
               imageSrc="/assets/cleo/advance-img.png"
               imageSrc2=""
               title="Compliance and Regulatory Agent"
@@ -156,7 +164,7 @@ const login: NextPage = () => {
               className=""
               imageSrcStyle1=""
               imageSrcStyle2=""
-                backgroundMainImage=""
+              backgroundMainImage=""
             />
             <ImageCard
               backgroundImage=""
@@ -167,7 +175,7 @@ const login: NextPage = () => {
               className=""
               imageSrcStyle1="w-[523px] h-[272px] pt-12"
               imageSrcStyle2=""
-                backgroundMainImage=""
+              backgroundMainImage=""
             />
           </div>
         </div>
